@@ -42,3 +42,12 @@ vector<int>::iterator isInVec(vector<int>::iterator begin, vector<int>::iterator
 
 **Exercise 9.6:** What is wrong with the following program? How might you
 correct it?
+````
+list<int> lst1;
+list<int>::iterator iter1 = lst1.begin(),
+iter2 = lst1.end();
+while (iter1 < iter2) /* ... */
+````
+**A list does not support random access and thus its iterators are not relationally comparable.
+This can be fixed by using !=, as all iterators are equality comparable.**
+
