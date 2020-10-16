@@ -31,6 +31,6 @@ bool isEqual(std::vector<int> v, std::list<int> l) {
 
 **Exercise 9.17:** Assuming c1 and c2 are containers, what (if any)
 constraints does the following usage place on the types of c1 and c2?
-if (c1 < c2)
+if (c1 < c2)   
 **c1 & c2 must be containers of the same type & their elements must also be of 
-the same type.
+the same type.**
