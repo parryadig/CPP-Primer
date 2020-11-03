@@ -66,6 +66,7 @@ vector instead.
 **The code would work, however the operation is far more costly. All elements in the vector would have to be 
 shifted one index to the right before pushing the value to the front, meaning a new vector will be created, & 
 the contents of the previous one copied over, with every iteration of the while.
+
 **Exercise 9.22:** Assuming iv is a vector of ints, what is wrong with the
 following program? How might you correct the problem(s)?
 **Currently the program loops infinitely as iter is not incremented. We must increment twice. Once in the inner
